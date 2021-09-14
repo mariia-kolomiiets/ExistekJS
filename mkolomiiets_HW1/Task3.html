@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Task 3</title>
+    <script type="text/javascript">
+	
+		var height = prompt("Enter a height of cylinder","0");
+		var rad = prompt("Enter a radius of cylinder", "0");
+		
+		height = parseInt(height);
+		rad = parseInt(rad);
+
+		if (isNaN(height)) { height = 0 ; }
+		if (isNaN(rad)) { rad = 0; }
+
+		var capacity = Math.PI * Math.pow(rad, 2) * height;
+		var square = 2 * Math.PI * rad * height;
+
+		console.log("capacity: ", capacity);
+		console.log("square: ", square);
+	
+		
+    </script>
+</head>
+<body>
+	<script>
+		document.body.innerHTML += "<h1>Capacity is " + capacity + "</h1>"
+		document.body.innerHTML += "<h1>Square is " + square + "</h1>"
+	</script>
+</body>
+</html>
